@@ -1,0 +1,21 @@
+
+.field {
+  -fx-border-radius: 8px;
+  -fx-background-color: transparent;
+  -fx-border-color: B4B4B4;
+  -fx-border-width: 3px;
+  -fx-border-style: solid;
+}
+
+.field:focused{
+  -fx-border-color: #ff5722;
+  -fx-font-size: 18px;
+}
+.button{
+  -fx-background-radius: 8px;
+  -fx-background-color: #FF5722;
+}
+.button:hover{
+  -fx-font-size: 18px;
+
+}
