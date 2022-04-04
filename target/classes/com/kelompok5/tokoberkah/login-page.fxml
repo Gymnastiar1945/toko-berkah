@@ -39,7 +39,7 @@
                   <Cursor fx:constant="TEXT" />
                </cursor>
                <font>
-                  <Font name="SansSerif Regular" size="14.0" />
+                  <Font name="SansSerif Regular" size="18.0" />
                </font>
             </TextField>
             <PasswordField fx:id="txtpass" layoutX="78.0" layoutY="464.0" prefHeight="45.0" prefWidth="484.0" promptText="Masukkan password anda" styleClass="field" stylesheets="@css/login.css">
@@ -47,7 +47,7 @@
                   <Cursor fx:constant="TEXT" />
                </cursor>
                <font>
-                  <Font name="SansSerif Regular" size="14.0" />
+                  <Font name="SansSerif Regular" size="18.0" />
                </font>
             </PasswordField>
             <Button fx:id="BtnLogin" layoutX="78.0" layoutY="545.0" mnemonicParsing="false" onAction="#BtnLogin" prefHeight="49.0" prefWidth="484.0" stylesheets="@css/login.css" text="Masuk" textFill="WHITE">

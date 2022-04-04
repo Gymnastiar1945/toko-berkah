@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'Fleftex';
+  src: url('../font/Poppins-medium.ttf');
+}
 
 .field {
+  -fx-font-family: "Poppins";
   -fx-border-radius: 8px;
   -fx-background-color: transparent;
   -fx-border-color: B4B4B4;
@@ -8,14 +13,23 @@
 }
 
 .field:focused{
+  -fx-font-family: "Poppins";
   -fx-border-color: #ff5722;
   -fx-font-size: 18px;
 }
 .button{
+  -fx-font-family: "Poppins";
   -fx-background-radius: 8px;
   -fx-background-color: #FF5722;
 }
 .button:hover{
+  /*-fx-font-family: "Poppins";*/
   -fx-font-size: 18px;
+  -fx-font-weight: bold;
+  -fx-background-color: #FFAA8F;
+}
+.button:focused{
 
+  -fx-font-size: 18px;
+  -fx-font-weight: bold;
 }

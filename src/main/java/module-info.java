@@ -7,6 +7,7 @@ module com.kelompok5.tokoberkah {
     requires org.kordamp.bootstrapfx.core;
     requires java.sql;
     requires mysql.connector.java;
+    requires javafx.graphics;
 
     opens com.kelompok5.tokoberkah to javafx.fxml;
     exports com.kelompok5.tokoberkah;

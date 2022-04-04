@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.LineChart?>
-<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -63,7 +59,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label depthTest="DISABLE" layoutX="40.0" layoutY="175.0" prefHeight="1.0" prefWidth="254.0" text="  Transaksi" textFill="#757575">
+            <Label depthTest="DISABLE" layoutX="40.0" layoutY="175.0" prefHeight="1.0" prefWidth="254.0" styleClass="label-off" stylesheets="@css/dashbord.css" text="  Transaksi" textFill="#757575">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -81,7 +77,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Label>
-            <Label depthTest="DISABLE" layoutX="40.0" layoutY="238.0" prefHeight="0.0" prefWidth="269.0" text="  Gudang" textFill="#757575">
+            <Label depthTest="DISABLE" layoutX="40.0" layoutY="238.0" prefHeight="0.0" prefWidth="269.0" styleClass="label-off" stylesheets="@css/dashbord.css" text="  Gudang" textFill="#757575">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -99,7 +95,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Label>
-            <Label depthTest="DISABLE" layoutX="40.0" layoutY="316.0" prefHeight="0.0" prefWidth="339.0" text="  Riwayat" textFill="#757575">
+            <Label depthTest="DISABLE" layoutX="40.0" layoutY="316.0" prefHeight="0.0" prefWidth="339.0" styleClass="label-off" stylesheets="@css/dashbord.css" text="  Riwayat" textFill="#757575">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -117,7 +113,7 @@
                   <Insets bottom="20.0" left="50.0" />
                </VBox.margin>
             </Label>
-            <Label depthTest="DISABLE" layoutX="40.0" layoutY="356.0" prefHeight="0.0" prefWidth="412.0" text="  Retur Barang" textFill="#757575">
+            <Label depthTest="DISABLE" layoutX="40.0" layoutY="356.0" prefHeight="0.0" prefWidth="412.0" styleClass="label-off" stylesheets="@css/dashbord.css" text="  Retur Barang" textFill="#757575">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -143,7 +139,7 @@
                   <Insets bottom="20.0" left="30.0" />
                </VBox.margin>
             </Label>
-            <Label depthTest="DISABLE" layoutX="60.0" layoutY="356.0" prefHeight="0.0" prefWidth="412.0" text="  Daftar Karyawan" textFill="#757575">
+            <Label depthTest="DISABLE" layoutX="60.0" layoutY="356.0" prefHeight="0.0" prefWidth="412.0" styleClass="label-off" stylesheets="@css/dashbord.css" text="  Daftar Karyawan" textFill="#757575">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -161,7 +157,7 @@
                   <Insets bottom="20.0" left="50.0" />
                </VBox.margin>
             </Label>
-            <Label depthTest="DISABLE" layoutX="60.0" layoutY="356.0" prefHeight="0.0" prefWidth="412.0" text="  Pengaturan" textFill="#757575">
+            <Label depthTest="DISABLE" layoutX="60.0" layoutY="356.0" prefHeight="0.0" prefWidth="412.0" styleClass="label-off" stylesheets="@css/dashbord.css" text="  Pengaturan" textFill="#757575">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -194,7 +190,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
                <VBox.margin>
-                  <Insets left="30.0" top="120.0" />
+                  <Insets bottom="20.0" left="50.0" />
                </VBox.margin>
             </Label>
          </children>
@@ -202,14 +198,6 @@
       <Pane layoutX="275.0" prefHeight="106.0" prefWidth="1004.0" style="-fx-background-color: #FFF;" />
       <Pane layoutX="539.0" layoutY="120.0" prefHeight="212.0" prefWidth="226.0" styleClass="panel-hijau" stylesheets="@css/dashbord.css">
          <children>
-            <Button fx:id="btnLogin1" layoutX="14.0" layoutY="155.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="201.0" styleClass="button-hijau" stylesheets="@css/dashbord.css" text="Cek Daftar Sekarang" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
             <Label layoutX="9.0" layoutY="14.0" prefHeight="38.0" prefWidth="210.0" text="Pendapatan Bulan Ini" textAlignment="CENTER" textFill="#46cc59">
                <font>
                   <Font name="System Bold" size="20.0" />
@@ -218,35 +206,23 @@
                   <Insets left="3.0" />
                </padding>
             </Label>
-            <Label layoutX="55.0" layoutY="70.0" prefHeight="53.0" prefWidth="168.0" text="1.000.000" textFill="#46cc59">
+            <Label fx:id="lblPendapatan" layoutX="8.0" layoutY="80.0" prefHeight="53.0" prefWidth="210.0" textAlignment="CENTER" textFill="#46cc59">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="70.0" prefHeight="53.0" prefWidth="53.0" text="Rp" textFill="#46cc59">
+            <Button layoutX="14.0" layoutY="159.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="201.0" styleClass="button-hijau" stylesheets="@css/dashbord.css" text="Cek Daftar Barang" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="30.0" />
-               </font>
-               <padding>
-                  <Insets left="3.0" />
-               </padding>
-            </Label>
-         </children>
-      </Pane>
-      <Pane layoutX="789.0" layoutY="120.0" prefHeight="212.0" prefWidth="226.0" styleClass="panel-oranye" stylesheets="@css/dashbord.css">
-         <children>
-            <Button fx:id="btnLogin12" layoutX="14.0" layoutY="155.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="201.0" stylesheets="@css/dashbord.css" text="Cek Daftar Barang" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font size="18.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
-               <styleClass>
-                  <String fx:value="button-hijau" />
-                  <String fx:value="button-oranye" />
-               </styleClass>
             </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="789.0" layoutY="120.0" prefHeight="212.0" prefWidth="226.0" styleClass="panel-oranye" stylesheets="@css/dashbord.css">
+         <children>
             <Label layoutX="9.0" layoutY="14.0" prefHeight="38.0" prefWidth="210.0" text="Pengeluaran Bulan Ini" textAlignment="CENTER" textFill="#ff9a51">
                <font>
                   <Font name="System Bold" size="20.0" />
@@ -268,18 +244,18 @@
                   <Insets left="3.0" />
                </padding>
             </Label>
-         </children>
-      </Pane>
-      <Pane layoutX="1040.0" layoutY="120.0" prefHeight="212.0" prefWidth="226.0" styleClass="panel-merah" stylesheets="@css/dashbord.css">
-         <children>
-            <Button fx:id="btnLogin111" layoutX="13.0" layoutY="155.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="201.0" styleClass="button-merah" stylesheets="@css/dashbord.css" text="Cek Daftar Barang" textFill="WHITE">
+            <Button layoutX="14.0" layoutY="159.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="201.0" styleClass="button-oranye" stylesheets="@css/dashbord.css" text="Cek Daftar Barang" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font size="18.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="1040.0" layoutY="120.0" prefHeight="212.0" prefWidth="226.0" styleClass="panel-merah" stylesheets="@css/dashbord.css">
+         <children>
             <Label layoutX="13.0" layoutY="14.0" prefHeight="38.0" prefWidth="201.0" text="Stok Barang Menipis" textAlignment="CENTER" textFill="#ee3030">
                <font>
                   <Font name="System Bold" size="20.0" />
@@ -301,18 +277,18 @@
                   <Insets left="3.0" />
                </padding>
             </Label>
-         </children>
-      </Pane>
-      <Pane layoutX="289.0" layoutY="120.0" prefHeight="212.0" prefWidth="226.0" styleClass="panel-hijau" stylesheets="@css/dashbord.css">
-         <children>
-            <Button fx:id="btnLogin11" layoutX="14.0" layoutY="155.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="201.0" styleClass="button-hijau" stylesheets="@css/dashbord.css" text="Lihat Detail" textFill="WHITE">
+            <Button layoutX="13.0" layoutY="159.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="201.0" styleClass="button-merah" stylesheets="@css/dashbord.css" text="Cek Daftar Barang" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font size="18.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="289.0" layoutY="120.0" prefHeight="212.0" prefWidth="226.0" styleClass="panel-hijau" stylesheets="@css/dashbord.css">
+         <children>
             <Label layoutX="26.0" layoutY="14.0" prefHeight="38.0" prefWidth="175.0" text="Transaksi Hari Ini" textAlignment="CENTER" textFill="#46cc59">
                <font>
                   <Font name="System Bold" size="20.0" />
@@ -321,7 +297,7 @@
                   <Insets left="3.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" layoutX="74.0" layoutY="74.0" prefHeight="45.0" prefWidth="78.0" text="100" textFill="#46cc59">
+            <Label fx:id="lblTrans" alignment="CENTER" layoutX="74.0" layoutY="74.0" prefHeight="45.0" prefWidth="78.0" textFill="#46cc59">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
@@ -334,49 +310,61 @@
                   <Insets left="3.0" />
                </padding>
             </Label>
+            <Button layoutX="13.0" layoutY="159.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="201.0" styleClass="button-hijau" stylesheets="@css/dashbord.css" text="Lihat Detail" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </Pane>
-      <HBox layoutX="289.0" layoutY="355.0" prefHeight="351.0" prefWidth="976.0">
+      <Pane layoutX="288.0" layoutY="346.0" prefHeight="360.0" prefWidth="979.0" style="-fx-background-color: #FFF; -fx-background-insets: 5; -fx-background-radius: 12;">
+         <effect>
+            <DropShadow color="#00000042" height="27.11" radius="13.055" spread="0.57" width="27.11" />
+         </effect>
          <children>
-            <LineChart prefHeight="306.0" prefWidth="487.0" title="PENJUALAN">
-              <xAxis>
-                <CategoryAxis side="BOTTOM" />
-              </xAxis>
-              <yAxis>
-                <NumberAxis side="LEFT" />
-              </yAxis>
-               <HBox.margin>
-                  <Insets top="20.0" />
-               </HBox.margin>
-            </LineChart>
-            <TableView fx:id="table_dashboard" prefHeight="335.0" prefWidth="487.0" stylesheets="@css/dashbord.css">
-              <columns>
-                <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
-                <TableColumn fx:id="col_barang" prefWidth="75.0" text="Barang" />
-                  <TableColumn fx:id="col_kode" prefWidth="75.0" text="kode" />
-                  <TableColumn fx:id="col_harga" prefWidth="75.0" text="harga" />
-                  <TableColumn fx:id="col_qty" prefWidth="75.0" text="Qty" />
-              </columns>
-               <padding>
-                  <Insets bottom="10.0" left="30.0" right="10.0" />
-               </padding>
-               <styleClass>
-                  <String fx:value="track" />
-                  <String fx:value="thumb" />
-                  <String fx:value="text" />
-                  <String fx:value="table-view" />
-                  <String fx:value="increment-button" />
-                  <String fx:value="decrement-button" />
-                  <String fx:value="cell" />
-                  <String fx:value="column-header" />
-                  <String fx:value="column-header-background" />
-                  <String fx:value="label" />
-                  <String fx:value="scroll-bar" />
-                  <String fx:value="table-row-cell" />
-                  <String fx:value="filter" />
-               </styleClass>
-            </TableView>
+            <Pane layoutX="465.0" layoutY="69.0" prefHeight="267.0" prefWidth="500.0" style="-fx-background-color: #FFF; -fx-background-insets: 5; -fx-background-radius: 8;">
+               <effect>
+                  <DropShadow color="#0000001d" height="27.11" radius="13.055" spread="0.57" width="27.11" />
+               </effect>
+               <children>
+                  <TableView fx:id="table_dashboard" layoutX="19.0" layoutY="14.0" prefHeight="236.0" prefWidth="464.0" stylesheets="@css/dashbord.css">
+                    <columns>
+                      <TableColumn fx:id="no" prefWidth="52.0" text="No" />
+                      <TableColumn fx:id="nama_barang" prefWidth="79.0" text="Nama Barang" />
+                        <TableColumn fx:id="jenis" prefWidth="106.0" text="Jenis" />
+                        <TableColumn fx:id="qty" prefWidth="79.0" text="Qty" />
+                        <TableColumn fx:id="harga" prefWidth="68.0" text="Harga" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
          </children>
-      </HBox>
+      </Pane>
+      <Pane fx:id="paneBarang" layoutX="288.0" layoutY="346.0" prefHeight="360.0" prefWidth="979.0" style="-fx-background-color: #FFF; -fx-background-insets: 5; -fx-background-radius: 12;">
+         <effect>
+            <DropShadow color="#00000042" height="27.11" radius="13.055" spread="0.57" width="27.11" />
+         </effect>
+         <children>
+            <Pane layoutX="465.0" layoutY="69.0" prefHeight="267.0" prefWidth="500.0" style="-fx-background-color: #FFF; -fx-background-insets: 5; -fx-background-radius: 8;">
+               <effect>
+                  <DropShadow color="#0000001d" height="27.11" radius="13.055" spread="0.57" width="27.11" />
+               </effect>
+               <children>
+                  <TableView fx:id="table_dashboard1" layoutX="19.0" layoutY="14.0" prefHeight="236.0" prefWidth="464.0" stylesheets="@css/dashbord.css">
+                     <columns>
+                        <TableColumn fx:id="no1" prefWidth="52.0" text="ID BARANNG" />
+                        <TableColumn fx:id="nama_barang1" prefWidth="79.0" text="Nama Barang" />
+                        <TableColumn fx:id="jenis1" prefWidth="106.0" text="Jenis" />
+                        <TableColumn fx:id="qty1" prefWidth="79.0" text="Qty" />
+                        <TableColumn fx:id="harga1" prefWidth="68.0" text="Harga" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
